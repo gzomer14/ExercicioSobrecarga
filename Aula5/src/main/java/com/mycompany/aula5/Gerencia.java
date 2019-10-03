@@ -1,7 +1,7 @@
 
 package com.mycompany.aula5;
 
-public class Gerencia extends CalculoFolha{
+public class Gerencia {
     private double Salario;
 
     public double getSalario() {
@@ -10,10 +10,5 @@ public class Gerencia extends CalculoFolha{
 
     public void setSalario(int Salario) {
         this.Salario = Salario;
-    }
-    
-    public void salarioLiquido()
-    {
-        salarioLiquido(getSalario());
     }
 }

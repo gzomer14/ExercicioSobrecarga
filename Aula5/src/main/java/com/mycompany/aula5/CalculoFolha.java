@@ -1,7 +1,7 @@
 
 package com.mycompany.aula5;
 
-public class CalculoFolha {
+public class CalculoFolha extends Gerencia{
     
     private double calculaINSS (double salario)
     {
@@ -27,7 +27,12 @@ public class CalculoFolha {
         return 0;
     }
     
-     public void salarioLiquido(double salario)
+    public void salarioLiquido()
+    {
+        salarioLiquido(getSalario());
+    }
+    
+     private void salarioLiquido(double salario)
     {
         if (salario == 0)
         {
