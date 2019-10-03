@@ -1,8 +1,8 @@
 
 package com.mycompany.aula5;
 
-public class Gerencia extends Setores{
-    private final double Salario = 5000;
+public class Desenvolvimento extends Setores{
+    private final double Salario = 3520;
     
     public void salSetor()
     {

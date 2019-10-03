@@ -1,7 +1,7 @@
 
 package com.mycompany.aula5;
 
-public class CalculoFolha extends Gerencia{
+public class CalculoFolha {
     
     private double calculaINSS (double salario)
     {
@@ -25,19 +25,10 @@ public class CalculoFolha extends Gerencia{
         if (salario >= 4664.69) return (salario*0.275);
         
         return 0;
-    }
+    }  
     
-    public void salarioLiquido()
+    public void salarioLiquido(double salario)
     {
-        salarioLiquido(getSalario());
-    }
-    
-     private void salarioLiquido(double salario)
-    {
-        if (salario == 0)
-        {
-            System.out.println("Informe seu salario bruto primeiro");
-        }
         System.out.println("Seu salario liquido é: R$ " + (salario - (calculaINSS(salario) + calculaFGTS(salario) + calculaIRRF(salario))));
     }
     
