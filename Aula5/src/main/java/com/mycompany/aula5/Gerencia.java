@@ -10,5 +10,10 @@ public class Gerencia extends CalculoFolha{
 
     public void setSalario(int Salario) {
         this.Salario = Salario;
-    }    
+    }
+    
+    public void salarioLiquido()
+    {
+        salarioLiquido(getSalario());
+    }
 }
